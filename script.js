@@ -50,10 +50,10 @@ document.addEventListener('DOMContentLoaded', function () {
         currentTimeElement.textContent = currentTime;
     }
 
-    // Call the function initially
+  
     displayCurrentTime();
 
-    // Update the time every second
+
     setInterval(displayCurrentTime, 1000);
     
     function setCustomTime() {
