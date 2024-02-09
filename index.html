@@ -46,6 +46,10 @@
         </a>
     </div>
 
+    <section id="timeSection" class="container mt-5">
+        <h2>Current Time</h2>
+        <div id="currentTime"></div>
+    </section>
 
     <section id="nlp" class="container mt-5">
         <div class="row">
@@ -102,10 +106,18 @@
            
         </div>
     </section>
-    
+   
+    <section id="timeSection" class="container mt-5">
+        <h2>Enter the time and the date you visited this website:</h2>
+        <!-- <label for="customDate">Enter Date and Time:</label> -->
+        <input type="datetime-local" id="customDate">
+        <button onclick="setCustomTime()">Set Time</button>
+        <div id="currentTime"></div>
+    </section>
+
     <section id="dragAndDrop" class="container mt-5">
     <h2>Drag and Drop</h2>
-    <div id="draggable" draggable="true" class="drag-item">CSLC- Lebanese University</div>
+    <div id="draggable" draggable="true" class="drag-item">Natural Language Processing</div>
     <div id="dropzone" class="dropzone">Drop here!</div>
 </section>
 
