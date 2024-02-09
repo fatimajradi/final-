@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const dropzone = document.getElementById('dropzone');
 
     draggableElement.addEventListener('dragstart', function (e) {
-        e.dataTransfer.setData('text/plain', 'Drag me!');
+        e.dataTransfer.setData('text/plain', 'CSLC- Lebanese University');
     });
 
     dropzone.addEventListener('dragover', function (e) {
