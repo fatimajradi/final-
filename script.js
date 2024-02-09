@@ -44,7 +44,28 @@ document.addEventListener('DOMContentLoaded', function () {
         document.documentElement.scrollTop = 0;
     });
 
+    function displayCurrentTime() {
+        const currentTimeElement = document.getElementById('currentTime');
+        const currentTime = new Date().toLocaleTimeString();
+        currentTimeElement.textContent = currentTime;
+    }
 
+    // Call the function initially
+    displayCurrentTime();
+
+    // Update the time every second
+    setInterval(displayCurrentTime, 1000);
+    
+    function setCustomTime() {
+        const customDateInput = document.getElementById('customDate').value;
+        const currentTimeElement = document.getElementById('currentTime');
+        
+        if (customDateInput) {
+            currentTimeElement.textContent = customDateInput;
+        } else {
+            currentTimeElement.textContent = "Please enter a valid date and time.";
+        }
+    }
     
    
 });
